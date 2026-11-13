@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pacientes</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <h1>Clínica Médica 🩺</h1>
+            <p>Cuidando de sua saúde sempre! 😉</p>
+        </div>
+    </header>
+    <div class="geral">
+        <form action="pacientes.php" method="post">
+    <h1>Faça o cadastro de Paciente ⬇️</h1>
+    <div class="campo">
+        <label for="idpaciente">ID do Paciente:</label><br>
+        <input type="number" placeholder="Digite aqui o ID do paciente." id="txtidpaciente" name="idpaciente">
+    </div>
+    <div class="campo">
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" placeholder="Digite aqui o nome completo do paciente." id="txtnome" name="nome">
+    </div>
+    <div class="campo">
+        <label for="cpf">CPF do Paciente:</label><br>
+        <input type="text" placeholder="Digite aqui o CPF do paciente." id="txtcpf" name="cpf">
+    </div>
+      <div class="campo">
+        <label for="sexo">Sexo do Paciente:</label><br>
+        <input type="text" placeholder="Digite aqui o sexo do paciente." id="txtsexo" name="sexo">
+    </div>
+    <div class="campo">
+        <label for="telefone">Telefone do Paciente:</label><br>
+        <input type="text" placeholder="Digite aqui o telefone do paciente." id="txttelefone" name="telefone">
+    </div>
+    <div class="campo">
+        <label for="email">E-mail do Paciente:</label><br>
+        <input type="email" placeholder="Digite aqui o e-mail do paciente." id="txtemail" name="email">
+    </div>
+    <div class="campo">
+        <label for="endereco">Endereço do Paciente:</label><br>
+        <input type="text" placeholder="Digite aqui o endereço do paciente." id="txtendereco" name="endereco">
+    </div> 
+    <input type="submit" name="submit" value="Cadastrar">
+    <button type="reset">Limpar 🧹</button>
+    </form>
+    </div>
+    <br>
+     <div class="botaoinicio">
+        </div>
+    <a href="index.html">Voltar para a Página Inicial</a>
+    <footer>
+    Clinica Médica &copy; 2026 Todos os direitos reservados
+   </footer>
+</body>
+</html>

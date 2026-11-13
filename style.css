@@ -1,0 +1,210 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff8fb;
+    color: #65545e;
+}
+
+/* CABEÇALHO */
+
+header {
+    width: 100%;
+    padding: 35px 20px;
+    text-align: center;
+    background: linear-gradient(120deg, #f4d5e3, #dceafa);
+    box-shadow: 0 3px 15px #eadce5;
+}
+
+#header h1 {
+    color: #785568;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+#header p {
+    color: #806d79;
+    font-size: 15px;
+}
+
+/* TÍTULO PRINCIPAL */
+
+body > h1 {
+    text-align: center;
+    margin: 55px 15px 35px;
+    color: #a56e89;
+    font-size: 28px;
+}
+
+/* CARTÕES */
+
+.geral {
+    width: 90%;
+    max-width: 1050px;
+    margin: 0 auto 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* Corrige os divs aninhados do HTML original */
+
+.botaopaciente,
+.botaoexames {
+    display: contents;
+}
+
+.botaopaciente a,
+.botaoexames a,
+.botaoconsultas a {
+    min-height: 230px;
+    padding: 30px 22px;
+    background: white;
+    border: 1px solid #f0dce6;
+    border-radius: 22px;
+    box-shadow: 0 8px 22px #eadce5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #795b6b;
+    transition: .3s;
+}
+
+.botaopaciente a:hover,
+.botaoexames a:hover,
+.botaoconsultas a:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px #e6cfdb;
+    background: #fffafd;
+}
+
+.geral strong {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.geral small {
+    color: #97818d;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* RODAPÉ */
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    padding: 22px;
+    text-align: center;
+    background: #e6d6e8;
+    color: #765f76;
+    font-size: 14px;
+}
+
+/* FORMULÁRIOS */
+
+form {
+    background: white;
+    padding: 35px;
+    border-radius: 22px;
+    border: 1px solid #f0dce6;
+    box-shadow: 0 8px 22px #eadce5;
+}
+
+form h1 {
+    color: #a56e89;
+    margin-bottom: 25px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    color: #795b6b;
+    font-weight: 600;
+}
+
+.campo input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ead5df;
+    border-radius: 12px;
+    background: #fffafd;
+    outline: none;
+    font-size: 15px;
+}
+
+.campo input:focus {
+    border-color: #d99db5;
+    box-shadow: 0 0 0 4px #fbeaf1;
+}
+
+input[type="submit"],
+button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 12px;
+    background: #d99db5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 8px 5px 0 0;
+    transition: .3s;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background: #bd8199;
+    transform: translateY(-2px);
+}
+
+/* VOLTAR */
+
+.botaoinicio {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.botaoinicio a {
+    color: #a56e89;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 750px) {
+    .geral {
+        grid-template-columns: 1fr;
+        max-width: 430px;
+    }
+
+    body > h1 {
+        font-size: 23px;
+        margin-top: 35px;
+    }
+
+    .botaopaciente a,
+    .botaoexames a,
+    .botaoconsultas a {
+        min-height: 180px;
+    }
+
+    form {
+        padding: 22px;
+    }
+}
